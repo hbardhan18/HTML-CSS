@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY-12</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Assistant", sans-serif;
+        }
+
+        #screen {
+            width: 100%;
+
+        }
+
+        #navbar {
+            width: 100%;
+            border: 5px solid blue;
+            height: 60px;
+            display: flex;
+
+
+            justify-content: space-evenly;
+        }
+
+        #body {
+            width: 100%;
+            border: 5px solid greenyellow;
+            background-color: black;
+            height: 300px;
+        }
+
+        #footer {
+            width: 100;
+            height: 200px;
+        }
+
+        #icon {
+            width:6%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navigations {
+            width:26%;
+            display: flex;
+        
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+        }
+
+        #naviagtions>h6 {
+            font-size: 12px;
+           
+        
+        }
+
+      
+       
+
+        #search {
+            width: 25%;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+        }
+
+        #profile {
+            width: 10%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .imgstyle {
+            width: 60%;
+            height: 56px;
+        }
+        .withIcon{
+            color:black;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .withIcon img{
+            height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id=" icon">
+                <img class="imgstyle" alt="Myntra"
+                    src="data:image/jpeg;base64,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" />
+            </div>
+            <div id="navigations" >
+                <h6>MEN</h6>
+                <h6>WOMEN</h6>
+                <h6>KIDS</h6>
+                <h6>HOME&LIVING</h6>
+                <h6>BEAUTY</h6>
+                <h6>STUDIO</h6>
+            </div>            
+            <div id="search">
+                <input type="text" placeholder="Search"
+                style="width:100%;padding: 20px;">
+            </div>
+            <div id="profile">
+                <div class="withIcon"> <img src="user.png" alt=""> <span>Profile</span></div>
+                <div class="withIcon"><img src="shopping-bag.png" alt=""> <span>Cart</span></div>
+                <div class="withIcon"><img src="user.png" alt=""> <span>Span</span></div>
+            </div>
+        </div>
+        <div id="body">Body</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>

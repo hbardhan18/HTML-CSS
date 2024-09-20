@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-12</title>
+    <h1>Hansh Bardhan</h1>
+    <h1>FlexBox </h1>
+    <style>
+        .children{
+            /* width: 200px; */
+            background: rgb(211, 138, 138);
+            margin: 20px;
+        }
+        .flex-row{
+            width: 70vw;
+            border:2px solid blue;
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-row-reverse{
+            width: 70vw;
+            border:2px solid blue;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .flex-column{
+            width: 70vw;
+            border:2px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-column-reverse{
+            width: 70vw;
+            border:2px solid blue;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .between{
+            justify-content: space-between;
+        }
+        .evenly{
+            justify-content: space-evenly;
+        }
+        .around{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    Row<hr/>
+    Between
+    <div class="flex-row between">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Evenly 
+    <div class="flex-row evenly">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Around 
+    <div class="flex-row around">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div>  
+    <br/><br/>
+    Row Reverse</hr><br>
+    Between
+    <div class="flex-row-reverse between">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Evenly 
+    <div class="flex-row-reverse evenly">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Around 
+    <div class="flex-row-reverse around">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div>  
+    <br><br>Column<hr/><br>
+    Between
+    <div class="flex-column between">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Evenly 
+    <div class="flex-column evenly">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Around 
+    <div class="flex-column around">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div>
+    <br/><br/>
+    column Reverse</hr><br>
+    Between
+    <div class="flex-column-reverse between">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Evenly 
+    <div class="flex-column-reverse evenly">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div> 
+    Around 
+    <div class="flex-column-reverse around">
+        <div class="children">children 1</div>
+        <div class="children">children 2</div>
+        <div class="children">children 3</div>
+    </div>  
+<br><br>Column<hr/><br>  
+</body>
+</html>
