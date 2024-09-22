@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-13</title>
+    <h1>Hansh Bardhan</h1>
+    <style>
+        .parent{
+            display: flex;
+            width: 100%;
+            border:2px solid black;
+            justify-content: space-between;
+       } 
+       .children{
+        /* display:flex; */
+        width: 20px;
+        height: 200px;
+        text-align:center;
+        border:2px solid red;
+       }   
+/* 300-500::-Mobile
+ 550-850:Tablet 
+ 851-1450:Laptop
+ 1450>screen       */
+ @media screen and(min-width:100px)and (max-width:850px){
+    .children{
+        border:2px solid blueviolet;
+    }
+ }
+ @media screen and (min-width:1451px) {
+    .children{
+        border:2px solid yellow;
+    }
+ }
+ /* ending */
+  @media screen and (max-width:500px){
+    .parent{
+        flex-direction: column;
+    }
+    .children{
+        border: 2px solid blue;
+        font-size: 22px;
+        width:80%;
+        margin: auto;
+    }
+ }  
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children">1</div>
+        <div class="children">2</div>
+        <div class="children">3</div>
+        <div class="children">4</div>
+        <div class="children">5</div>
+        <div class="children">6</div>
+        <div class="children">7</div>
+        <div class="children">8</div>
+</div>
+</body>
+</html>
