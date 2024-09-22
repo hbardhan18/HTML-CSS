@@ -16,6 +16,7 @@
         /* display:flex; */
         width: 20px;
         height: 200px;
+        font-size: 42px;
         text-align:center;
         border:2px solid red;
        }   
@@ -23,18 +24,32 @@
  550-850:Tablet 
  851-1450:Laptop
  1450>screen       */
- @media screen and(min-width:100px)and (max-width:850px){
+ @media screen and (min-width:100px) and (max-width:550px) {
     .children{
         border:2px solid blueviolet;
     }
  }
- @media screen and (min-width:1451px) {
+ @media screen and (min-width:551px) and (max-width:850px) {
     .children{
         border:2px solid yellow;
     }
  }
- /* ending */
-  @media screen and (max-width:500px){
+ @media screen and (min-width:851) and (max-width:1450) {
+    .children{
+        border:2px solid pink;
+    }
+ }
+ @media screen and (min-width: 1451px) {
+    .children{
+        border:2px solid green;
+    }
+ }
+ @media screen and (min-with:800px) {
+    .children{
+        border: 2px solid black;
+    }
+ }
+  @media screen and (max-width:500px) {
     .parent{
         flex-direction: column;
     }
@@ -48,6 +63,7 @@
 </style>
 </head>
 <body>
+    <h1 style="background-color: aqua; height: 80px;width:100%;text-align: center;"> Media Queries</h1>
     <div class="parent">
         <div class="children">1</div>
         <div class="children">2</div>
