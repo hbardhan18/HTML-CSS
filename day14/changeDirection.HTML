@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-14</title>
+<style>
+        .parent {
+            width: 100%;
+            border:2px solid blue;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .hanshu {
+            border: 2px solid red;
+            width: 20%;
+            height:200px;
+            margin-bottom: 30px; 
+        }
+            .Grandson {
+                border:2px solid black;
+            }
+        @media screen and (min-width:500) and (max-width:950px) {
+            .parent { 
+                flex-direction: row;
+            }
+            .hanshu {
+                dislay:flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="hanshu">
+        <div class="grandson">Hansh</div>
+        <div class="grandson">Honey</div>
+        <div class="grandson">Himanshu</div>
+        <div class="grandson">Hemant</div>
+    </div>
+        <div class="Hanshu">Hansh</div>
+        <div class="Hanshu">Honey</div>
+        <div class="Hanshu">Himanshu</div>
+    </div>
+</body>
+</html>
