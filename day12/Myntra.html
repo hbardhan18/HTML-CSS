@@ -22,8 +22,6 @@
             /* border: 5px solid blue; */
             height: 60px;
             display: flex;
-
-
             justify-content: space-evenly;
         }
 
@@ -58,7 +56,6 @@
 
         #naviagtions>h6 {
             font-size: 12px;
-        
         }
         #search {
             width: 25%;
@@ -66,7 +63,6 @@
             display: flex;
             align-items: center;
         }
-
         #profile {
             width: 10%;
             /* border: 2px solid black; */
@@ -87,8 +83,23 @@
             justify-content: center;
             align-items: center;
         }
-        .withIcon img{
+        .withIcon img {
             height: 36px;
+        }
+        @media screen and (min-width:700px) and (max-width:1000px) {
+            #search {
+display:none;
+            }
+            #navigation {
+                width:50%;
+            }
+            #profile { 
+                width:20%;
+          
+            }
+            #navigation {
+                display:none;
+            }
         }
     </style>
 </head>
